@@ -10,6 +10,7 @@ import Home from "./Home.jsx";
 import Contact from "./Contact.jsx";
 import "./NavBar.css";
 import "./App.css"
+import AdvanceForm from "./AdvanceForm.jsx";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/advance-form" element={<AdvanceForm/>}/>
         </Routes>
       </BrowserRouter>
       <Banner />
