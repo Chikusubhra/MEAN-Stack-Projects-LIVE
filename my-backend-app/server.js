@@ -1,8 +1,9 @@
-const express = require("express")
+import express from "express"
+import dotenv from "dotenv"
+dotenv.config()
+import dbTest from "./dbconnect/dbTest.js"
 const app = express()
 
-require("dotenv").config()
-require("../dbconnect/dbTest.js")
 
 app.get("/", (req, res) => {
     res.send("Hello from subham mallick from get")
@@ -18,8 +19,9 @@ app.delete("/delete", (req, res) => {
 })
 
 
-const PORT=3000
+const port=process.env.PORT || 3000
 
-app.listen(PORT,()=>{
-    console.log(`server is running on port ${PORT}`);
+app.listen(port,()=>{
+    dbTest()
+    console.log(`server is running on port ${port}`);
 })
