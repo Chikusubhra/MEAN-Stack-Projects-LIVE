@@ -1,4 +1,5 @@
 import express from "express"
+
 const router = express.Router()
 import contact from "../model/contacts.js"
 router.post("/create", async (req, res) => {
@@ -37,7 +38,6 @@ router.get("/",(req,res)=>{
 router.get("/about",(req,res)=>{
     res.send("this is about page")
 })
-
 */
 
 export default router

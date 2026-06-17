@@ -32,4 +32,8 @@ const port=process.env.PORT || 3000
 app.listen(port,()=>{
     dbTest()
     console.log(`server is running on port ${port}`);
+<<<<<<< HEAD
 })
+=======
+})
+>>>>>>> 7e1aab58644da4b1a5226ffe7510a178fd507a01
