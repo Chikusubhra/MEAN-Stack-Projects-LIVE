@@ -15,7 +15,7 @@ import AdvanceForm from "./AdvanceForm.jsx";
 function App() {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <NavBar />
       <BrowserRouter>
         <Routes>
@@ -26,9 +26,9 @@ function App() {
           <Route path="/advance-form" element={<AdvanceForm/>}/>
         </Routes>
       </BrowserRouter>
-      <Banner />
-      <Body />
-      <Footer />
+      {/* <Banner /> */}
+      {/* <Body /> */}
+      {/* <Footer /> */}
     </div>
   );
 }
